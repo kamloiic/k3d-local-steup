@@ -40,7 +40,7 @@ k3d cluster create $cluster_name \
   --port "8880:30080@loadbalancer" \
   --port "8881:30081@loadbalancer" \
   --port "8882:30082@loadbalancer"
-``
+```
 
 Use the Traefik Helm values file `traefik.values.yaml` to install. 
 
