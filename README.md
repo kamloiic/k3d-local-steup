@@ -4,7 +4,7 @@ Note: All the procedures has been tested on Mac using
 - Docker desktop
 - [k3d](https://k3d.io/) 
 - Helm
-- Traefik
+- [Traefik](https://github.com/traefik/traefik-helm-chart)
 
 ### Local docker registry
 
@@ -27,7 +27,7 @@ docker push registry.local:5000/containous/whoami:latest
 
 ### Create k3d cluster
 
-Create a new k3d cluster using the command below. It will install the cluster without (Traefik)[https://github.com/traefik/traefik-helm-chart] that we will deploy in the next step.
+Create a new k3d cluster using the command below. It will install the cluster without Traefik that we will deploy in the next step.
 
 ```bash
 k3d cluster create $cluster_name \
